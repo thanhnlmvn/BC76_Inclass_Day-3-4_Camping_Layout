@@ -1,0 +1,45 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+.header {
+  background-color: #f8e1db;
+  padding: 10px 60px;
+}
+
+.header ul {
+  list-style: none;
+  margin: 10px 0 0;
+}
+.header ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+/* Với các thẻ a, muốn điều chỉnh màu cần viết selector tới đúng thẻ a để điều chỉnh */
+.header ul li a {
+  color: black;
+  /* text-decoration: line-through; */
+  text-decoration: none;
+}
+
+.oDen {
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  /* margin tạo ra các khoản cách bên ngoài thẻ html */
+  /* margin: 20px 40px 60px 80px; */
+  /* margin-bottom: 100px; */
+  /* margin-top: 100px; */
+}
+
+.oCam {
+  background-color: orange;
+  width: 200px;
+  height: 200px;
+  /* padding tạo ra khoản cách giữa nội dung và đường viền (border) thẻ */
+  padding: 30px;
+}

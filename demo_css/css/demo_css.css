@@ -1,0 +1,68 @@
+/* 
+  Selector
+
+  Cấu trúc css
+  Selector{
+    thuộc tính: giá trị;
+  } 
+*/
+
+/* Selector tag name */
+h1 {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* Selector Id */
+#demo {
+  background-color: brown;
+  color: white;
+  font-size: 25px;
+}
+
+/* Selector Class */
+.demo2 {
+  color: orange;
+  background-color: black;
+}
+
+/* Selector Cha con */
+/* div p:first-child {
+  color: yellow;
+  background-color: black;
+} */
+
+/* div p:last-child {
+  color: yellow;
+  background-color: black;
+} */
+
+div p:nth-child(2) {
+  color: yellow;
+  background-color: black;
+}
+
+/* Độ ưu tiên css */
+/* 
+  tag name = 1đ
+  class = 10đ
+  id = 100đ
+*/
+/* Cùng điểm độ ưu tiên code nào nằm ở dưới thì sẽ đè được code ở trên */
+
+/* 1đ */
+h5 {
+  background-color: blue;
+  text-align: center;
+}
+
+/* 100 + 1 = 101đ */
+#demo4 h5 {
+  background-color: brown;
+}
+
+/* 1đ */
+h5 {
+  background-color: orange;
+}

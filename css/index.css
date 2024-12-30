@@ -48,7 +48,7 @@ h2 {
 
 /* PRODUCTS */
 .products {
-  padding: 80px 0;
+  padding: 80px 0 0;
   background-color: #faf4f2;
   /* background-color: black; */
   text-align: center;
@@ -66,7 +66,7 @@ h2 {
 
   /* Để khác phục sử dụng lại công thức => Chiều dài một thẻ html = chiều dài nội dung + padding + border => bằng cách khai báo box-sizing: border-box*/
 
-  padding: 0 15px;
+  padding: 15px;
   /* box-sizing: border-box; */
 
   /* công thức mới => 25% = nội dung + padding + border */
@@ -102,11 +102,12 @@ h2 {
   background-color: #e8e8e8;
   border: none;
   border-radius: 25px;
+  margin-top: 11px;
+  color: #8d8d8d;
 }
 
 .products .item_bg i {
-  color: red;
-  font-size: 30px;
+  color: #e76f51;
 
   /* position là thuộc tính giúp di chuyển phần tử trên giao diện  */
   /* đi kèm với positon sẽ có 4 thuộc tính con hỗ trợ di chuyển */
@@ -114,20 +115,20 @@ h2 {
 
   /* position: relative; */
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 60px;
+  right: 60px;
   /* left: -100px; */
   /* right: -100px; */
   /* top: -100px; */
   /* bottom: -100px; */
 
   /* Cách 1 để canh giữa trái tim  */
-  padding: 15px;
+  /* padding: 15px; */
 
   /* cách 2 để canh giữa trái tim */
-  /* width: 60px;
-  height: 60px;
-  line-height: 60px; */
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
 
   background-color: white;
   border-radius: 12px;
@@ -136,6 +137,115 @@ h2 {
   opacity: 0.7;
 }
 
+.products_content {
+  padding-top: 20px;
+}
+
+.item_bg h3 {
+  margin-top: 11px;
+}
+
+.item_bg p {
+  margin-top: 11px;
+  color: #8d8d8d;
+}
+
+.btn {
+  margin: 30px 0 60px;
+  padding: 13px 60px;
+  color: #e76f51;
+  background-color: #faf4f2;
+  border: 1px solid #e76f51;
+  border-radius: 25px;
+}
+
+/* INFO */
+.info {
+  background-color: #f8e1db;
+  margin-bottom: 100px;
+  border-radius: 20px;
+}
+
+.info_img {
+  float: left;
+  width: 50%;
+  padding: 20px 60px;
+  background-image: url(./../img/mask.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.info_title {
+  float: left;
+  width: 50%;
+  padding-top: 70px;
+}
+
+.info_title p {
+  margin: 12px 0 30px;
+  color: #8d8d8d;
+}
+
+.info_title_left,
+.info_title_right {
+  float: left;
+  width: 50%;
+}
+
+.info_title_left h3,
+.info_title_right h3 {
+  margin-bottom: 21px;
+  color: #8d8d8d;
+}
+
+.info_title_right i {
+  color: #e76f51;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+/* FOOTER */
+.footer {
+  background: #f8e1db;
+  border-radius: 100px 100px 0 0;
+  color: #3b3735;
+}
+
+.footer_item {
+  padding-top: 70px;
+  line-height: 28px;
+}
+
+.footer_item li {
+  list-style: none;
+}
+
+.footer_item ul a {
+  color: #3b3735;
+  text-decoration: none;
+}
+
+.footer_content .footer_item:first-of-type {
+  padding: 70px 45px 0px 50px;
+  float: left;
+  width: 40%;
+}
+
+.footer_content .footer_item_link {
+  float: left;
+  width: calc(60% / 3);
+}
+
+.footer_item h3 {
+  margin-bottom: 21px;
+}
+
+.footer_copyrights {
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* --------------------------------------------- */
 .oDen {
   background-color: black;
   width: 200px;

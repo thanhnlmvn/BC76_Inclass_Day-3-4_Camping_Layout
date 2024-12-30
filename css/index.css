@@ -2,6 +2,17 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+h2 {
+  color: #8d8d8d;
+  font-size: 24px;
+}
+
+.clear {
+  clear: both;
 }
 
 /* HEADER */
@@ -26,6 +37,105 @@
   text-decoration: none;
 }
 
+/* CAROUSEL */
+.carousel {
+  background-image: url(./../img/BG.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 80px 0;
+  background-color: #faf4f2;
+  /* background-color: black; */
+  text-align: center;
+}
+
+.products .products_item {
+  float: left;
+
+  /* với giá trị calc cho phép thực hiện phép toán tính ra các số  đo cho width và height */
+  width: calc(100% / 4);
+
+  /* chiều dài thẻ html = chiều dài nội dung bên trong  */
+
+  /* tổng chiều dài của dòng = 25% * 4 + 30px (của padding) => vượt quá 25% nên đó là lý do bị rớt dòng */
+
+  /* Để khác phục sử dụng lại công thức => Chiều dài một thẻ html = chiều dài nội dung + padding + border => bằng cách khai báo box-sizing: border-box*/
+
+  padding: 0 15px;
+  /* box-sizing: border-box; */
+
+  /* công thức mới => 25% = nội dung + padding + border */
+  /* nên khai báo box-sizing ở reset css */
+  /* Lưu ý margin không áp dụng được vì margin đảy bên ngoài thẻ nên công thức này sẽ vô dụng */
+}
+
+.products .item_bg {
+  background-color: white;
+  padding: 40px;
+  /* border-radius giúp bo tròn góc phần tử html */
+  border-radius: 25px;
+  position: relative;
+}
+
+.products .item_bg img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.products .item_bg button {
+  /* điều chỉnh độ dày đường viền */
+  /* border-width: 10px; */
+  /* điều chỉnh màu sắc đường viền */
+  /* border-color: orange; */
+  /* điều chỉnh kiểu đường viền */
+  /* border-style: none; */
+
+  /* viết gọn */
+  /* border: 10px solid orange; */
+
+  padding: 13px 54px;
+  background-color: #e8e8e8;
+  border: none;
+  border-radius: 25px;
+}
+
+.products .item_bg i {
+  color: red;
+  font-size: 30px;
+
+  /* position là thuộc tính giúp di chuyển phần tử trên giao diện  */
+  /* đi kèm với positon sẽ có 4 thuộc tính con hỗ trợ di chuyển */
+  /* position relative giúp phần tử di chuyển bắt đầu tính từ vị trí mặc định của phần tử đó */
+
+  /* position: relative; */
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  /* left: -100px; */
+  /* right: -100px; */
+  /* top: -100px; */
+  /* bottom: -100px; */
+
+  /* Cách 1 để canh giữa trái tim  */
+  padding: 15px;
+
+  /* cách 2 để canh giữa trái tim */
+  /* width: 60px;
+  height: 60px;
+  line-height: 60px; */
+
+  background-color: white;
+  border-radius: 12px;
+
+  /* opacity điều chỉnh độ trong suốt của một phần từ */
+  opacity: 0.7;
+}
+
 .oDen {
   background-color: black;
   width: 200px;
@@ -42,4 +152,12 @@
   height: 200px;
   /* padding tạo ra khoản cách giữa nội dung và đường viền (border) thẻ */
   padding: 30px;
+}
+
+/* Thủ thuật tạo hình tròn của html css */
+.demo3 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
 }
